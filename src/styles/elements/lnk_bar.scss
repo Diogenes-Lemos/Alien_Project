@@ -1,0 +1,71 @@
+.lnk_bar {
+    position: sticky;
+    background-color: rgba(26, 26, 26,);
+    display: flex;
+
+    &__left {
+        display: flex;
+        &__btn-a {
+            height: 40px;
+            width: 95px;
+            border: none;
+            background-color: white;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-right: -18px;
+            clip-path: polygon(75% 0%, 88% 50%, 75% 100%, 0% 100%, 0 52%, 0% 0%);
+
+            &__text {
+                padding-right: 20px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: bold;
+                font-size: 17px;
+                color: blue;
+            }
+
+            &:hover {
+                cursor: pointer;
+                background-color: grey;
+            }
+        }
+        &__btn-b {
+            height: 40px;
+            width: 115px;
+            border: none;
+            background-color: grey;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            margin-left: 0;
+            clip-path: polygon(75% 0%, 88% 50%, 75% 100%, 0% 100%, 12% 50%, 0% 0%);
+
+            &__text {
+                padding-right: 15px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: bold;
+                font-size: 17px;
+                color: blue;
+            }           
+        }
+    }
+
+    &__right {
+        
+        &__links {
+            display: flex;
+            margin-left: 60vw;
+            justify-content: center;
+
+            &__link {
+                margin: 10px;
+
+                &__obj {
+                    font-family: "Montserrat", sans-serif;
+                    color: white;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

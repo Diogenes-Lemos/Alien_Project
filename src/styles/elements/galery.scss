@@ -1,0 +1,39 @@
+.gallery-title {
+    margin-left: 3vw;
+    margin-top: 2vw;
+    padding-left: 2vw;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 30px;
+    border-left: 0.1rem solid black;
+}
+
+.gallery {
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(26, 26, 26, 0.9);
+    }
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 110px;
+        background-color: rgb(26, 26, 26);
+        gap: 15px;
+        border-top: 2px solid white;
+        &__space {
+            &__icon {
+                height: 80px;
+                width: auto;
+
+                &--selected {
+                    height: 80px;
+                    width: auto;
+                    border: 3px solid blue;
+                }
+            } 
+        }
+    }
+}

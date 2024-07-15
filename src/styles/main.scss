@@ -1,3 +1,12 @@
+@use 'elements/header';
+@use 'elements/dropdown';
+@use 'elements/hero';
+@use 'elements/lnk_bar';
+@use 'elements/watch';
+@use 'elements/about';
+@use 'elements/galery';
+@use 'elements/footer';
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +14,3 @@
     list-style: none;
 }
 
-@mixin icon() {
-    width: 55px;
-    height: 55px;
-    background-color: black;
-}

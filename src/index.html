@@ -1,11 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aliens The Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header__lft-corner">
+            <h1>
+                <img class="header__lft-corner__logo" src="./icons/20th-century-fox.png" alt="20th logo" />
+            </h1>
+            <button class="header__lft-corner__button">
+                <img class="header__lft-corner__button__icon" src="./icons/align-justify.svg" alt="hamburguer">
+            </button>
+        </div>
+        <div class="header__search">
+            <!--No futuro, quando for fazer o formulario com botão, não incluir formulário e
+            botão na mesma DIV pois isso prejudica o efeito de transição do JS-->
+            <form class="header__search__form">
+                <input class="header__search__form__input" type="text" id="busca" placeholder="Procure outros titulos">
+            </form>
+            <button class="header__search__button">
+                <img class="header__search__button__icon" src="./icons/search.svg" alt="search">
+            </button>
+        </div>
+    </header>
+
+    <section id="menu_dropdown">
+        <div class="dropdown">
+            <ul class="dropdown__list">
+                <li class="dropdown__list__item">
+                    <img class="dropdown__list__item__icon" src="./icons/home.svg" alt="home">
+                    <a class="dropdown__list__item__link" href="https://www.20thcenturystudios.com/">Home</a>
+                </li>
+                <li class="dropdown__list__item">
+                    <img class="dropdown__list__item__icon" src="./icons/film.svg" alt="movies">
+                    <a class="dropdown__list__item__link" href="https://www.20thcenturystudios.com/movies">Movies</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="hero">
+        <div class="hero">
+            <div class="hero__content">
+                <div class="hero__content__title">
+                    <h1>Aliens, os filmes</h1>
+                </div>
+                <div class="hero__content__text">
+                    <h5>Assista todos, hoje mesmo!</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="links">
+        <div class="lnk_bar">
+            <div class="lnk_bar__left">
+                <button class="lnk_bar__left__btn-a">
+                    <span class="lnk_bar__left__btn-a__text">
+                        Movies
+                    </span>
+                </button>
+                <button class="lnk_bar__left__btn-b">
+                    <span class="lnk_bar__left__btn-b__text">
+                        Aliens
+                    </span>
+                </button>
+            </div>
+            <div class="lnk_bar__right">
+                <ul class="lnk_bar__right__links">
+                    <li class="lnk_bar__right__links__link">
+                        <a class="lnk_bar__right__links__link__obj" href="#">Assista</a>
+                    </li>
+                    <li class="lnk_bar__right__links__link">
+                        <a class="lnk_bar__right__links__link__obj" href="#">Sobre</a>
+                    </li>
+                    <li class="lnk_bar__right__links__link">
+                        <a class="lnk_bar__right__links__link__obj" href="#">Galeria</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="Watch">
+        <div class="watch">
+            <div class="watch__title">
+                <h1>
+                    Assista:
+                </h1>
+            </div>
+            <div class="watch__digital">
+                <h3 class="watch__digital__title">
+                    Compre ou Alugue - Digital
+                </h3>
+                <div class="watch__digital__places">
+                    <a href="#">
+                        <img src="./logos/appletv_new.png" alt="ApleTV" class="watch__digital__places__item">
+                    </a>
+                    <a href="#">
+                        <img src="./logos/GooglePlay_500x200.png" alt="Googleplay" class="watch__digital__places__item">
+                    </a>
+                    <a href="#">
+                        <img src="./logos/PrimeVideo_500x200.png" alt="PrimeVideo" class="watch__digital__places__item">
+                    </a>
+                    <a href="#">
+                        <img src="./logos/MoviesAnywhere_500x200.png" alt="MoviesANywhere" class="watch__digital__places__item">
+                    </a>
+                    <a href="#">
+                        <img src="./logos/youtube_retailer.jpg" alt="Youtube" class="watch__digital__places__item">
+                    </a>
+                </div>
+            </div>
+            <div class="watch__physical">
+                <h3 class="watch__physical__title">
+                    Compre - em Disco
+                </h3>
+                <div class="watch__physical__places">
+                    <a href="#">
+                        <img src="./logos/amazon_500x200.png" alt="Amazon" class="watch__physical__places__item">
+                    </a>
+                    <a href="#">
+                        <img src="./logos/walmart_500x200.png" alt="Walmart" class="watch__physical__places__item">
+                    </a>
+                    <a href="#">
+                        <img src="./logos/best_buy_500x200.png" alt="bestbuy" class="watch__physical__places__item">
+                    </a>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <section id="About">
+        <div class="about">
+            <div class="about__image">
+                <img src="./images/Aliens_1986.jpg" alt="Aliens" class="about__image__object">
+            </div>
+            <div class="about__content">
+                <h1 class="about__content__title">Sobre</h1>
+                <p class="about__content__text">Uma nave espacial, ao retornar para Terra, recebe estranhos sinais vindos de um asteroide. Enquanto a equipe investiga o local, um dos tripulantes é atacado por um misterioso ser. O que parecia ser um ataque isolado se transforma em um terror constante, pois o tripulante atacado levou para dentro da nave o embrião de um alienígena, que não para de crescer e tem como meta matar toda a tripulação.</p>
+            </div>
+            <div class="about__description">
+                <h3 class="about__description__title">Lançado nos cinemas em:</h3>
+                <p class="about__description__text">Agosto de 1979</p>
+                <h3 class="about__description__title">Genero:</h3>
+                <p class="about__description__text">Horror,</p>
+                <p class="about__description__text">Ficção Cientifica</p>
+                <h3 class="about__description__title">Siga:</h3>
+                <div class="about__description__icons-area">
+                    <a href="#" class="about__description__icons-area__space">
+                        <img class="about__description__icons-area__space__icons" src="./icons/X_icon.svg.png" alt="X">
+                    </a>
+                    <a href="#" class="about__description__icons-area__space">
+                        <img class="about__description__icons-area__space__icons" src="./icons/facebookicon.png" alt="Facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="gallery-title">
+            <h1>Galeria</h1>
+        </div>
+        <div class="gallery">
+            <div class="gallery__image">
+                <img id="element" src="./images/img1.jpg" alt="imagem">
+            </div>
+            <div class="gallery__icons">
+                <i class="gallery__icons__space" id="1">
+                    <img class="gallery__icons__space__icon" src="./images/Aliens_1986.jpg" alt="img0">
+                </i>
+                <i class="gallery__icons__space" id="2">
+                    <img class="gallery__icons__space__icon" src="./images//img1.jpg" alt="img1">
+                </i>
+                <i class="gallery__icons__space" id="3">
+                    <img class="gallery__icons__space__icon" src="./images/img2.jpg" alt="img2">
+                </i>
+                <i class="gallery__icons__space" id="4">
+                    <img class="gallery__icons__space__icon" src="./images/img3.jpg" alt="img3">
+                </i>
+                <i class="gallery__icons__space" id="5">
+                    <img class="gallery__icons__space__icon" src="./images/img4.png" alt="img4">
+                </i>
+                <i class="gallery__icons__space" id="6">
+                    <img class="gallery__icons__space__icon" src="./images/img5.jpg" alt="img5">
+                </i>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="footer__f-logo">
+                <img class="footer__f-logo__img" src="./icons/20th-century-fox.png" alt="logo">
+            </div>
+            <div class="footer__f-text">
+                <p class="footer__f-text__text">
+                    TM & © 2024 20th century fox Entertainment Inc. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
