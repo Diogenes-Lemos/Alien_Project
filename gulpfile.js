@@ -10,7 +10,7 @@ async function copyImg() {
 
 function copyIndex() {
     return gulp.src('./src/index.html')
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./'));
 }
 
 function distStyle(done) {
@@ -29,12 +29,6 @@ function copyIcons() {
     return gulp.src('./src/icons/*')
         .pipe(gulp.dest('./dist/icons'));
 }
-
-/*function copyImg() {
-    return gulp.src('./src/images/*')
-        .pipe(imagemin())
-        .pipe(gulp.dest('./dist/images'));
-}*/
 
 function copyLogos() {
     return gulp.src('./src/logos/*')
